@@ -96,23 +96,22 @@ body{
 
 .countdown-container{
     margin-top: 5rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
 .countdown-el{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .big-text{
     font-size: 8rem;
     line-height: 1;
-    background-color: hsla(154, 28%, 46%, 0.482);
-    padding: 2rem 3rem;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: hsla(154, 28%, 46%, 0.1);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    padding: 2rem;
 }
 
 .left-rounded-corners{
