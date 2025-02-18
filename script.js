@@ -4,7 +4,7 @@ const minsEl = document.getElementById("mins");
 const secsEl = document.getElementById("secs");
 
 let taskDeadline = "18 Feb 2026";
-const dateEl = document.querySelector(".date");
+const dateEl = document.getElementById("date");
 dateEl.innerHTML = getCurrentDate();
 
 function countdown(){
@@ -35,6 +35,7 @@ function getCurrentDate(){
     let month = getMonthName(currentDate.getMonth());
     let year = currentDate.getFullYear();
 
+    console.log(`${weekDay}, ${day} ${month} ${year}`)
     return `${weekDay}, ${day} ${month} ${year}`;
 }
 
